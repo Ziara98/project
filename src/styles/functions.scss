@@ -1,0 +1,12 @@
+/* PX to REM */
+
+@function rem-calc($size, $global-font: $global-font) {
+    $remSize: $size / $global-font;
+    @return #{$remSize}rem;
+}
+
+/* PX to EM */
+
+@function em($pixels, $context: $global-font) {
+    @return #{$pixels / $context}em;
+}

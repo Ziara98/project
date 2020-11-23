@@ -1,0 +1,12 @@
+.overlay
+    .modal 
+        .close x 
+        .modal-title Запись на экскурсию 
+        form(method='post', action='#' class="register-form")
+            input(class="reg__input", type='text', placeholder="Ваше имя", required)
+            input(class="reg__input", type='email',placeholder="Ваш телефон",required)
+            input(class="reg__input", type='tel', placeholder="Возраст ребенка", required)
+            input(class="reg__input", type='tel', placeholder="Планируемая дата", required)
+        button(type='submit',class="register-btn") Оставить заявку 
+        p.modal-policy Нажимая на кнопку вы соглашаетесь с условиями 
+            a(href="#") пользовательского соглашения

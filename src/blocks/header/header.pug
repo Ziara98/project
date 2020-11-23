@@ -1,0 +1,34 @@
+.header
+    a(href="https://resharium-sad.ru/sravnenie-detskih-sadov-v-metro-pyatnickoe/").header__logo
+        img(src="../img/header/logo.png")
+        p.header__logo-title  Детский сад
+    .header__offer
+        .header__offer-img
+            img(src="../img/header/house.jpeg")
+        .header__offer-text
+            h4.header__offer-title Запишитесь на экскурсию 
+            btn(type="button" class="offer-btn") Записаться 
+    .header__mode 
+        .header__mode-img
+            svg(class="header-svg")
+                use(xlink:href="img/icons/sprite.svg#clock")
+        .header__mode-inner
+            h4.header__mode-title Режим работы 
+            p.header__mode-text Пн-Пт: 08:00-20:00
+            p.header__mode-text Сб-Вс: 10:00-18:00
+    .header__mode
+        .header__mode-img
+            svg(class="header-svg")
+                use(xlink:href="img/icons/sprite.svg#map")
+        .header__mode-inner
+            h4.header__mode-title Адрес
+            p.header__mode-text Светлогорский 13 усадьба Братцево (главное здание)
+    .header__feedback 
+        .header__feedback-inner
+            .header__feedback-img 
+                svg(class="header-svg")
+                    use(xlink:href="img/icons/sprite.svg#girl")
+            .header__feedback-text 
+                p Закажите обратный звонок и наш менеджер перезвонит Вам
+        a(href="tel:+74952302386" class="header__feedback-phone") +74952302386
+        btn(type="button" class="offer-btn") Заказать обратный звонок

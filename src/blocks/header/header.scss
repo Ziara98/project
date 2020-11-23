@@ -1,0 +1,139 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: rem-calc(10);
+
+
+    @include xs-block {
+        margin-top: rem-calc(10);
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    @include md-block {
+        justify-content: space-evenly;
+
+    }
+}
+
+.header__logo-title {
+    font-size: rem-calc(12);
+    color: black;
+}
+
+.header__offer {
+    display: flex;
+    align-items: center;
+    border: rem-calc(1) dashed #96bf31;
+    border-radius: rem-calc(15);
+    padding: rem-calc(17);
+    max-height: rem-calc(90);
+    margin-left: rem-calc(20);
+    margin-top: rem-calc(20);
+
+    @include sm-block {
+        max-height: rem-calc(120);
+        margin-left: 0;
+        margin-top: 0;
+
+    }
+}
+
+.header__offer-img img {
+    height: rem-calc(105);
+    width: rem-calc(105);
+    display: none;
+
+    @include sm-block {
+        display: block;
+    }
+}
+
+.header__offer-text {
+    margin-left: rem-calc(20);
+}
+
+.header__offer-title {
+    font-size: rem-calc(14);
+    margin-bottom: rem-calc(5);
+    max-width: rem-calc(120);
+    margin-bottom: rem-calc(10);
+
+    @include sm-block {
+        font-size: rem-calc(17);
+    }
+}
+
+.offer-btn {
+    color: #96bf31;
+    font-size: rem-calc(13);
+    text-transform: uppercase;
+    padding-bottom: rem-calc(2);
+    border-bottom: rem-calc(2) dashed #b7d464;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+
+    @include sm-block {
+        font-size: rem-calc(16);
+        text-align: left;
+    }
+}
+
+
+.header__mode {
+    display: flex;
+    max-width: rem-calc(180);
+    margin-top: rem-calc(20);
+
+    @include sm-block {
+        margin-top: 0;
+    }
+
+}
+
+.header__mode-img {
+    margin-right: rem-calc(7);
+}
+
+.header-svg {
+    width: rem-calc(25);
+    height: rem-calc(25);
+    fill: rgb(230, 90, 113);
+}
+
+.header__mode-title {
+    font-size: rem-calc(17);
+    margin-bottom: rem-calc(5);
+}
+
+.header__mode-text {
+    font-size: rem-calc(15);
+    margin-bottom: rem-calc(5);
+}
+
+.header__feedback {
+    margin-top: rem-calc(20);
+}
+
+.header__feedback-inner {
+    display: flex;
+}
+
+
+.header__feedback-text {
+    font-size: rem-calc(12);
+    margin-bottom: rem-calc(7);
+    max-width: rem-calc(140);
+}
+
+
+.header__feedback-phone {
+    display: block;
+    font-size: rem-calc(23);
+    text-decoration: none;
+    margin-bottom: rem-calc(3);
+    color: #323232;
+}

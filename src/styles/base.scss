@@ -1,0 +1,32 @@
+@import 'mixins';
+@import 'variables';
+@import 'functions';
+@import 'smart-grid';
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', 'Tahoma', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizelegibility;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+.container-fluid {
+  @include container-full();
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  @include container();
+  max-width: rem-calc(1536);
+  height: 100%;
+}

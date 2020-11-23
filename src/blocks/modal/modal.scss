@@ -1,0 +1,125 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /*анимация появления*/
+    transition: all 1.2s ease;
+    /*чтобы и открыв и закрыв плавно*/
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show {
+    /*появление класса*/
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    /* отсчет от края окна браузера*/
+    top: -100%;
+    left: 45%;
+    transform: translateX(-50%);
+    margin: 0 rem-calc(15);
+    background-color: white;
+    transition: all 2s ease;
+    padding: rem-calc(20);
+    min-width: rem-calc(300);
+}
+
+.show-modal {
+    visibility: visible;
+    opacity: 1;
+    top: 15%;
+
+}
+
+.close {
+    position: absolute;
+    right: rem-calc(10);
+    top: rem-calc(20);
+    cursor: pointer;
+}
+
+.modal-title {
+    font-size: rem-calc(15);
+    margin-bottom: rem-calc(15);
+    text-align: center;
+
+    @include xs-block() {
+        font-size: rem-calc(16);
+    }
+
+    @include sm-block() {
+        font-size: rem-calc(21);
+
+    }
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg__input {
+    width: 100%;
+    margin: 0;
+    margin-bottom: rem-calc(15);
+    border: rem-calc(2) solid #86C11A;
+    padding: rem-calc(12) rem-calc(10) rem-calc(12) rem-calc(40);
+    height: auto;
+    font-size: rem-calc(11);
+    box-sizing: border-box;
+    border-radius: rem-calc(15);
+    outline: none;
+
+    &::placeholder {
+        color: black;
+    }
+
+    @include xs-block() {
+        font-size: rem-calc(13);
+    }
+
+    @include sm-block() {
+        font-size: rem-calc(16);
+
+    }
+}
+
+
+.register-btn {
+    background-color: #fe72b8;
+    color: white;
+    font-size: rem-calc(14);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: rem-calc(15) rem-calc(30);
+    border-radius: rem-calc(25);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    margin: 0 auto;
+}
+
+.modal-policy {
+    font-size: rem-calc(12);
+    text-align: center;
+    padding: rem-calc(5) 0;
+    max-width: rem-calc(300);
+    margin-top: rem-calc(10);
+}
+
+.modal-policy a {
+    text-decoration: underline;
+    color: black;
+}

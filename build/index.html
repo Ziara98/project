@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Новый проект</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="icon" href="#!" type="image/x-icon">
+    <link rel="shortcut icon" href="#!" type="image/x-icon">
+    <link rel="apple-touch-icon" href="#!"><!--[if lte IE 10]>
+    <p class="browser-upgrade">Вы используете устаревшую версию браузера. Пожалуйста </p><a class="browser-upgrade__link" href="http://browsehappy.com/">обновите свой браузер</a><![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="header__inner">
+        <div class="container">
+          <div class="header"><a class="header__logo" href="https://resharium-sad.ru/sravnenie-detskih-sadov-v-metro-pyatnickoe/"><img src="../img/header/logo.png">
+              <p class="header__logo-title"> Детский сад</p></a>
+            <div class="header__offer">
+              <div class="header__offer-img"><img src="../img/header/house.jpeg"></div>
+              <div class="header__offer-text">
+                <h4 class="header__offer-title">Запишитесь на экскурсию </h4>
+                <btn class="offer-btn" type="button">Записаться </btn>
+              </div>
+            </div>
+            <div class="header__mode"> 
+              <div class="header__mode-img">
+                <svg class="header-svg">
+                  <use xlink:href="img/icons/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <div class="header__mode-inner">
+                <h4 class="header__mode-title">Режим работы </h4>
+                <p class="header__mode-text">Пн-Пт: 08:00-20:00</p>
+                <p class="header__mode-text">Сб-Вс: 10:00-18:00</p>
+              </div>
+            </div>
+            <div class="header__mode">
+              <div class="header__mode-img">
+                <svg class="header-svg">
+                  <use xlink:href="img/icons/sprite.svg#map"></use>
+                </svg>
+              </div>
+              <div class="header__mode-inner">
+                <h4 class="header__mode-title">Адрес</h4>
+                <p class="header__mode-text">Светлогорский 13 усадьба Братцево (главное здание)</p>
+              </div>
+            </div>
+            <div class="header__feedback"> 
+              <div class="header__feedback-inner">
+                <div class="header__feedback-img"> 
+                  <svg class="header-svg">
+                    <use xlink:href="img/icons/sprite.svg#girl"></use>
+                  </svg>
+                </div>
+                <div class="header__feedback-text"> 
+                  <p>Закажите обратный звонок и наш менеджер перезвонит Вам</p>
+                </div>
+              </div><a class="header__feedback-phone" href="tel:+74952302386">+74952302386</a>
+              <btn class="offer-btn" type="button">Заказать обратный звонок</btn>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay">
+        <div class="modal"> 
+          <div class="close">x </div>
+          <div class="modal-title">Запись на экскурсию </div>
+          <form class="register-form" method="post" action="#">
+            <input class="reg__input" type="text" placeholder="Ваше имя" required>
+            <input class="reg__input" type="email" placeholder="Ваш телефон" required>
+            <input class="reg__input" type="tel" placeholder="Возраст ребенка" required>
+            <input class="reg__input" type="tel" placeholder="Планируемая дата" required>
+          </form>
+          <button class="register-btn" type="submit">Оставить заявку </button>
+          <p class="modal-policy">Нажимая на кнопку вы соглашаетесь с условиями <a href="#">пользовательского соглашения</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="js/modernizr-custom.js"></script>
+<script src="js/main.js"></script>
