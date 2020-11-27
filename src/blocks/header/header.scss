@@ -1,7 +1,24 @@
+.logo_img {
+    height: rem-calc(35);
+    width: rem-calc(30);
+
+    @include xs-block {
+        height: rem-calc(50);
+        width: rem-calc(41);
+    }
+
+    @include sm-block {
+        height: rem-calc(55);
+        width: rem-calc(45);
+    }
+}
+
+
 .header {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-around;
+    // flex-direction: column;
     align-items: center;
     margin-top: rem-calc(10);
 
@@ -9,18 +26,27 @@
     @include xs-block {
         margin-top: rem-calc(10);
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     @include md-block {
         justify-content: space-evenly;
-
     }
+
+    @include sm-block {
+        justify-content: space-evenly;
+    }
+
 }
 
 .header__logo-title {
-    font-size: rem-calc(12);
+    font-size: rem-calc(9);
     color: black;
+
+    @include xs-block {
+        font-size: rem-calc(12);
+
+    }
 }
 
 .header__offer {
@@ -31,24 +57,34 @@
     padding: rem-calc(17);
     max-height: rem-calc(90);
     margin-left: rem-calc(20);
-    margin-top: rem-calc(20);
 
     @include sm-block {
         max-height: rem-calc(120);
         margin-left: 0;
         margin-top: 0;
+    }
+
+    @include md-block {
+        margin-top: rem-calc(10);
 
     }
 }
 
 .header__offer-img img {
-    height: rem-calc(105);
-    width: rem-calc(105);
-    display: none;
+    height: rem-calc(60);
+    width: rem-calc(60);
+
+    @include xs-block {
+        height: rem-calc(75);
+        width: rem-calc(75);
+    }
 
     @include sm-block {
         display: block;
+        height: rem-calc(105);
+        width: rem-calc(105);
     }
+
 }
 
 .header__offer-text {
@@ -60,6 +96,7 @@
     margin-bottom: rem-calc(5);
     max-width: rem-calc(120);
     margin-bottom: rem-calc(10);
+    text-align: center;
 
     @include sm-block {
         font-size: rem-calc(17);
@@ -82,6 +119,34 @@
     }
 }
 
+.header__mode-inner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    @include xs-block {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @include sd-block {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @include sm-block {
+        align-items: center;
+        margin: 0;
+        // justify-content: space-evenly;
+
+    }
+
+    // @include md-block {
+    //     justify-content: space-evenly;
+    // }
+}
 
 .header__mode {
     display: flex;

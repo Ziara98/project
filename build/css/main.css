@@ -578,16 +578,21 @@ template {
 
 /* BLOCKS */
 
+.logo_img {
+  height: 2.1875rem;
+  width: 1.875rem;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   margin-top: 0.625rem;
 }
 
 .header__logo-title {
-  font-size: 0.75rem;
+  font-size: 0.5625rem;
   color: black;
 }
 
@@ -599,13 +604,11 @@ template {
   padding: 1.0625rem;
   max-height: 5.625rem;
   margin-left: 1.25rem;
-  margin-top: 1.25rem;
 }
 
 .header__offer-img img {
-  height: 6.5625rem;
-  width: 6.5625rem;
-  display: none;
+  height: 3.75rem;
+  width: 3.75rem;
 }
 
 .header__offer-text {
@@ -617,6 +620,7 @@ template {
   margin-bottom: 0.3125rem;
   max-width: 7.5rem;
   margin-bottom: 0.625rem;
+  text-align: center;
 }
 
 .offer-btn {
@@ -628,6 +632,12 @@ template {
   cursor: pointer;
   display: block;
   text-align: center;
+}
+
+.header__mode-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .header__mode {
@@ -814,9 +824,29 @@ template {
     padding-right: 10px;
   }
 
+  .logo_img {
+    height: 3.125rem;
+    width: 2.5625rem;
+  }
+
   .header {
     margin-top: 0.625rem;
     flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .header__logo-title {
+    font-size: 0.75rem;
+  }
+
+  .header__offer-img img {
+    height: 4.6875rem;
+    width: 4.6875rem;
+  }
+
+  .header__mode-inner {
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 
@@ -826,6 +856,24 @@ template {
 
   .reg__input {
     font-size: 0.8125rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .header__mode-inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -840,6 +888,15 @@ template {
     padding-right: 10px;
   }
 
+  .logo_img {
+    height: 3.4375rem;
+    width: 2.8125rem;
+  }
+
+  .header {
+    justify-content: space-evenly;
+  }
+
   .header__offer {
     max-height: 7.5rem;
     margin-left: 0;
@@ -848,6 +905,8 @@ template {
 
   .header__offer-img img {
     display: block;
+    height: 6.5625rem;
+    width: 6.5625rem;
   }
 
   .header__offer-title {
@@ -857,6 +916,11 @@ template {
   .offer-btn {
     font-size: 1rem;
     text-align: left;
+  }
+
+  .header__mode-inner {
+    align-items: center;
+    margin: 0;
   }
 
   .header__mode {
@@ -885,5 +949,9 @@ template {
 
   .header {
     justify-content: space-evenly;
+  }
+
+  .header__offer {
+    margin-top: 0.625rem;
   }
 }

@@ -115,6 +115,11 @@ const optionsSmartGrid = {
             fields: '10px',
             offset: '5px'
         },
+        sd: {
+            width: '600px',
+            fields: '10px',
+            offset: '5px'
+        },
         xs: {
             width: '480px',
             fields: '10px',
